@@ -2,15 +2,27 @@
 //  ContentView.swift
 //  ResolverFrameworksTest
 //
-//  Created by Lucas Tiedtke on 20.06.21.
+//  Created by Michael Long on 6/19/21.
 //
-
 import SwiftUI
+import ResolverFramework
+import PresentationFramework
+
+class MyPresentationViewModelDelegate: PresentationViewModelDelegate {
+    func test() {
+        print("test")
+    }
+}
 
 struct ContentView: View {
+    @InjectedObject var viewModel: PresentationViewModel
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            PresentationView()
+            Text(viewModel.myText)
+        }
+        .font(.caption)
+        .padding()
     }
 }
 

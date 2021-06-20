@@ -7,19 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0CF4284267FB97D005FA6DA /* ResolverFrameworksTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF4283267FB97D005FA6DA /* ResolverFrameworksTestApp.swift */; };
-		A0CF4286267FB97D005FA6DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF4285267FB97D005FA6DA /* ContentView.swift */; };
 		A0CF4288267FB97E005FA6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CF4287267FB97E005FA6DA /* Assets.xcassets */; };
 		A0CF428B267FB97E005FA6DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CF428A267FB97E005FA6DA /* Preview Assets.xcassets */; };
+		A0CF42E4267FBAFA005FA6DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF42E3267FBAFA005FA6DA /* ContentView.swift */; };
+		A0CF42E6267FBB0D005FA6DA /* ResolverFrameworksTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF42E5267FBB0D005FA6DA /* ResolverFrameworksTestApp.swift */; };
+		A0CF42EA267FBB50005FA6DA /* PresentationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF42E8267FBB50005FA6DA /* PresentationFramework.framework */; };
+		A0CF42EB267FBB50005FA6DA /* PresentationFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF42E8267FBB50005FA6DA /* PresentationFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0CF42EC267FBB50005FA6DA /* ResolverFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF42E9267FBB50005FA6DA /* ResolverFramework.framework */; };
+		A0CF42ED267FBB50005FA6DA /* ResolverFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF42E9267FBB50005FA6DA /* ResolverFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0CF42EE267FBB50005FA6DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0CF42EB267FBB50005FA6DA /* PresentationFramework.framework in Embed Frameworks */,
+				A0CF42ED267FBB50005FA6DA /* ResolverFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A0CF4280267FB97D005FA6DA /* ResolverFrameworksTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResolverFrameworksTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CF4283267FB97D005FA6DA /* ResolverFrameworksTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverFrameworksTestApp.swift; sourceTree = "<group>"; };
-		A0CF4285267FB97D005FA6DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0CF4287267FB97E005FA6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0CF428A267FB97E005FA6DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0CF428C267FB97E005FA6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CF42E3267FBAFA005FA6DA /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0CF42E5267FBB0D005FA6DA /* ResolverFrameworksTestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolverFrameworksTestApp.swift; sourceTree = "<group>"; };
+		A0CF42E8267FBB50005FA6DA /* PresentationFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CF42E9267FBB50005FA6DA /* ResolverFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResolverFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CF42EA267FBB50005FA6DA /* PresentationFramework.framework in Frameworks */,
+				A0CF42EC267FBB50005FA6DA /* ResolverFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +61,7 @@
 			children = (
 				A0CF4282267FB97D005FA6DA /* ResolverFrameworksTest */,
 				A0CF4281267FB97D005FA6DA /* Products */,
+				A0CF42E7267FBB50005FA6DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +76,8 @@
 		A0CF4282267FB97D005FA6DA /* ResolverFrameworksTest */ = {
 			isa = PBXGroup;
 			children = (
-				A0CF4283267FB97D005FA6DA /* ResolverFrameworksTestApp.swift */,
-				A0CF4285267FB97D005FA6DA /* ContentView.swift */,
+				A0CF42E5267FBB0D005FA6DA /* ResolverFrameworksTestApp.swift */,
+				A0CF42E3267FBAFA005FA6DA /* ContentView.swift */,
 				A0CF4287267FB97E005FA6DA /* Assets.xcassets */,
 				A0CF428C267FB97E005FA6DA /* Info.plist */,
 				A0CF4289267FB97E005FA6DA /* Preview Content */,
@@ -69,6 +93,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A0CF42E7267FBB50005FA6DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF42E8267FBB50005FA6DA /* PresentationFramework.framework */,
+				A0CF42E9267FBB50005FA6DA /* ResolverFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +112,7 @@
 				A0CF427C267FB97D005FA6DA /* Sources */,
 				A0CF427D267FB97D005FA6DA /* Frameworks */,
 				A0CF427E267FB97D005FA6DA /* Resources */,
+				A0CF42EE267FBB50005FA6DA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -100,6 +134,7 @@
 				TargetAttributes = {
 					A0CF427F267FB97D005FA6DA = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -138,8 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CF4286267FB97D005FA6DA /* ContentView.swift in Sources */,
-				A0CF4284267FB97D005FA6DA /* ResolverFrameworksTestApp.swift in Sources */,
+				A0CF42E6267FBB0D005FA6DA /* ResolverFrameworksTestApp.swift in Sources */,
+				A0CF42E4267FBAFA005FA6DA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,18 +302,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ResolverFrameworksTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7N4SC49P8H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ResolverFrameworksTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blaggy.ResolverFrameworksTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +326,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ResolverFrameworksTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7N4SC49P8H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ResolverFrameworksTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
